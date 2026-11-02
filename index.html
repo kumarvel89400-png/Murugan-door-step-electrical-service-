@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Doorstep Murugan Electrical Service</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background: #102b46;
+    color: white;
+    padding: 22px 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header p {
+    color: #ffd166;
+    margin-top: 5px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #102b46, #176b87);
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    margin-bottom: 22px;
+}
+
+.button {
+    display: inline-block;
+    background: #ffbd35;
+    color: #172638;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+section {
+    padding: 30px 18px;
+    max-width: 850px;
+    margin: auto;
+}
+
+h2.section-title {
+    text-align: center;
+    margin-bottom: 22px;
+    color: #102b46;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 14px;
+}
+
+.card {
+    background: white;
+    padding: 20px 12px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.card .icon {
+    font-size: 32px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.booking {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccd3dc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit {
+    width: 100%;
+    margin-top: 20px;
+    background: #128c55;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.note {
+    font-size: 13px;
+    color: #555;
+    margin-top: 12px;
+}
+
+footer {
+    background: #102b46;
+    color: white;
+    text-align: center;
+    padding: 22px 12px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>⚡ Doorstep Murugan</h1>
+    <p>Electrical Service | Thanjavur</p>
+</header>
+
+<div class="hero">
+    <h2>Reliable Electrical Services</h2>
+    <p>Professional electrical repair and installation at your doorstep.</p>
+    <a href="#booking" class="button">📅 Book a Service</a>
+</div>
+
+<section>
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <div class="icon">🌀</div>
+            <h3>Fan Repair</h3>
+        </div>
+
+        <div class="card">
+            <div class="icon">💡</div>
+            <h3>Light Installation</h3>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔌</div>
+            <h3>Switch & Socket</h3>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚡</div>
+            <h3>Wiring Repair</h3>
+        </div>
+
+        <div class="card">
+            <div class="icon">🛠️</div>
+            <h3>Electrical Repair</h3>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏠</div>
+            <h3>Home Electrical Work</h3>
+        </div>
+    </div>
+</section>
+
+<section id="booking">
+    <h2 class="section-title">Book Your Service</h2>
+
+    <form class="booking" id="bookingForm">
+
+        <label for="name">Customer Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="phone">Mobile Number</label>
+        <input type="tel" id="phone" placeholder="Enter your mobile number"
+        pattern="[0-9]{10}" maxlength="10" required>
+
+        <label for="service">Select Service</label>
+        <select id="service" required>
+            <option value="">Choose a service</option>
+            <option>Fan Repair</option>
+            <option>Fan Installation</option>
+            <option>Light Installation</option>
+            <option>Switch & Socket Repair</option>
+            <option>Wiring Repair</option>
+            <option>Electrical Repair</option>
+            <option>Other Electrical Work</option>
+        </select>
+
+        <label for="date">Preferred Booking Date</label>
+        <input type="date" id="date" required>
+
+        <label for="address">Customer Address</label>
+        <textarea id="address" rows="3"
+        placeholder="Enter your address in Thanjavur" required></textarea>
+
+        <label for="details">Additional Details</label>
+        <textarea id="details" rows="2"
+        placeholder="Describe the electrical problem"></textarea>
+
+        <button type="submit" class="submit">
+            Book Now on WhatsApp
+        </button>
+
+        <p class="note">
+            Your booking details will be prepared in WhatsApp.
+            Your booking is confirmed only after the service provider responds.
+        </p>
+    </form>
+</section>
+
+<footer>
+    <h3>⚡ Doorstep Murugan Electrical Service</h3>
+    <p>Serving Thanjavur, Tamil Nadu</p>
+    <p>Quality Service | Customer Satisfaction</p>
+</footer>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+    const date = document.getElementById("date").value;
+    const address = document.getElementById("address").value.trim();
+    const details = document.getElementById("details").value.trim();
+
+    if (!/^[0-9]{10}$/.test(phone)) {
+        alert("Please enter a valid 10-digit mobile number.");
+        return;
+    }
+
+    const message =
+        "NEW ELECTRICAL SERVICE BOOKING%0A%0A" +
+        "Customer: " + encodeURIComponent(name) + "%0A" +
+        "Mobile: " + encodeURIComponent(phone) + "%0A" +
+        "Service: " + encodeURIComponent(service) + "%0A" +
+        "Date: " + encodeURIComponent(date) + "%0A" +
+        "Address: " + encodeURIComponent(address) + "%0A" +
+        "Details: " + encodeURIComponent(details);
+
+    const whatsappNumber = "91XXXXXXXXXX";
+
+    if (whatsappNumber.includes("X")) {
+        alert("Website demo ready! Add your WhatsApp number in the code to receive bookings.");
+        return;
+    }
+
+    window.open("https://wa.me/" + whatsappNumber + "?text=" + message, "_blank");
+});
+
+document.getElementById("date").min =
+    new Date().toLocaleDateString("en-CA");
+</script>
+
+</body>
+  </html>
